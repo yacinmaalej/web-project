@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='../css/boxicons/boxicons.css' rel='stylesheet'>
+    <link href='../css/fonts/boxicons.ttf' rel='stylesheet'>
+    <link href='../css/fonts/boxicons.woff' rel='stylesheet'>
+    <link href='../css/fonts/boxicons.woff2' rel='stylesheet'>
+
+    <!-- Email Js Message -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "eiO0nlVyEDy1_OzEx",
+            });
+        })();
+        </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#contact" class="logo">Yassine<span> Maalej</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="internships.html">Internships</a>
+            <a href="projects.html">Projects</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="toggle-container">
+            <input type="checkbox" id="theme-toggle" />
+            <label for="theme-toggle" class="toggle-switch">
+              <i class='bx bxs-sun icon-sun'></i>
+              <i class='bx bxs-moon icon-moon'></i>
+            </label>
+        </div>
+    </header>
+
+    <main class="contact" id="contact">
+        <div id="notification" class="notification"></div>
+        <h2 class="heading">Contact <span>Me</span></h2>    
+    
+        <form id="contact-form">
+            <div class="input-group"> 
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="phone" placeholder="Phone Number" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+            </div>  
+    
+            <div class="input-group-2"> 
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn" id="send-btn">
+            </div>
+        </form>
+    
+        <!-- Pop-up confirmation modal -->
+        <div id="confirmation-modal" class="modal">
+            <div class="modal-content">
+                <p>Are you sure you want to send this message?</p>
+                <div class="modal-buttons">
+                    <button id="confirm-yes" class="yes-btn">Yes</button>
+                    <button id="confirm-no" class="no-btn">No</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3> Contact Me </h3>
+                <p>Email : maalejyas@gmail.com</p>
+                <p>Address : Tunisia</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="internships.html">Internships</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/yassine-maalej-1a0264209/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/yacinmaalej"><i class='bx bxl-github' target="_blank" ></i></a>
+                    <a href="https://www.facebook.com/yassine.maalej.927" target="_blank"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://x.com/Yacin_MJ" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+        </div>
+    
+    </footer>
+
+    <div class="bottom-bar">
+        <p>&copy; 2024 Yassine Maalej Portfolio. All rights reserved</p>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+
+    
+    
+</body>
+</html>
